@@ -1,0 +1,23 @@
+Aim:
+To initiate MITM attack using ICMP redirect with Ettercap tool.
+Algorithm:
+1. Install ettercap if not done already using the command- 
+ yum install ettercap-common
+2. Next start ettercap in GTK 
+ettercap -G
+3. Click sniff, followed by unified sniffing.
+4. Select the interface connected to the network.
+5. Next ettercap should load into attack mode by clicking Hosts followed by Scan for Hosts
+6. Click Host List and choose the IP address for ICMP redirect
+7. Now all traffic to that particular IP address is redirected to some other IP address.
+8. Click MITM and followed by Stop to close the attack.
+ 
+Output:
+[root@localhost security lab]# yum install ettercap-common
+[root@localhost security lab]# ettercap –G
+
+Choose the appropriate interface
+Start scanning for hosts
+Click Host List and choose the IP address for ICMP redirect
+Now all traffic to that particular IP address is redirected to some other IP address.
+Stop MITM attack
